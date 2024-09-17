@@ -4,8 +4,8 @@ const YouTubeStrategy = require('passport-youtube').Strategy;
 
 // GitHub strategy
 passport.use(new GitHubStrategy({
-  clientID: 'Ov23liPBbPk0T8vnvJXw',
-  clientSecret: 'b96062b4bf86d2b84455e47fb005a12555968a63',
+  clientID: 'y',
+  clientSecret: 'y',
   callbackURL: 'http://localhost:3000/auth/github/callback'
 }, (accessToken, refreshToken, profile, cb) => {
   // Verify user's follow status on GitHub
@@ -26,8 +26,8 @@ passport.use(new GitHubStrategy({
 
 // YouTube strategy
 passport.use(new YouTubeStrategy({
-  clientID: '197921399736-d1od5lve4jui584vekfrck1e3sa3i6k2.apps.googleusercontent.com',
-  clientSecret: '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',
+  clientID: '197921399736-y.apps.googleusercontent.com',
+  clientSecret: 'GOCSPX-y',
   callbackURL: 'http://localhost:3000/auth/youtube/callback'
 }, (accessToken, refreshToken, profile, cb) => {
   // Verify user's subscription status on YouTube
